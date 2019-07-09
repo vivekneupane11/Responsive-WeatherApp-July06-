@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Damion');
+$mobile-mode:768px;
+@mixin mobile() {
+    @media only screen and(max-width: $mobile-mode) {
+        @content;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background: #948E99;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2E1437, #948E99);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2E1437, #948E99);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    @include mobile() {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: hidden;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h2 {
+        color: black;
+        text-align: center;
+        padding: 5px;
+    }
+    .search-weather {
+        padding: 2px;
+        input {
+            height: 40px;
+            width: 400px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 1px 5px black;
+            text-indent: 20px;
+            margin-left: 450px;
+            padding: 5px;
+            margin-top: 20px;
+            outline: none;
+            font-size: 16px;
+            @include mobile() {
+                width: 300px;
+                margin-left: auto;
+            }
+        }
+        i {
+            padding: 15px;
+            border-radius: 50%;
+            background-color: tomato;
+            color: white;
+            box-shadow: 0 1px 5px #030008;
+            transition: all 0.2s ease;
+        }
+        i:hover {
+            padding: 20px;
+            cursor: pointer;
+            font-size: 18px;
+            @include mobile() {
+                padding: 5px;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.weather-info {
+    height: 0vh;
+    width: 0vh;
+    display: none;
+    background-color: black;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    background: linear-gradient( to bottom, #eb8fa9, rgba(#eb8fa9, 0));
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 70vh;
+    transition: 1s all ease;
+    height: 60vh;
+    width: 70vh;
+    display: none;
+    transition: 1s all ease;
+    @include mobile() {
+        max-width: 45vh;
+        flex-wrap: wrap;
+    }
+    span {
+        font-size: 18px;
+    }
+    p {
+        top: 4px;
+        padding: 1rem;
+        margin: 2px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+        span {
+            font-size: 20px;
+            text-align: center;
+        }
+        img {
+            padding: 2px;
+            bottom: -10px;
+        }
+    }
+}
+
+#temp {
+    font-family: Damion, cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: overline;
+    text-decoration-style: dashed;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    color: black;
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    @include mobile() {
+        font-size: 24px;
+        margin-right: 100px;
+    }
+}

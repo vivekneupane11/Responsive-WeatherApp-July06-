@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Damion");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background: #948E99;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2E1437), to(#948E99));
+  background: linear-gradient(to right, #2E1437, #948E99);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: hidden;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.wrapper h2 {
+  color: black;
+  text-align: center;
+  padding: 5px;
+}
+
+.wrapper .search-weather {
+  padding: 2px;
+}
+
+.wrapper .search-weather input {
+  height: 40px;
+  width: 400px;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 0 1px 5px black;
+          box-shadow: 0 1px 5px black;
+  text-indent: 20px;
+  margin-left: 450px;
+  padding: 5px;
+  margin-top: 20px;
+  outline: none;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper .search-weather input {
+    width: 300px;
+    margin-left: auto;
+  }
+}
+
+.wrapper .search-weather i {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: tomato;
+  color: white;
+  -webkit-box-shadow: 0 1px 5px #030008;
+          box-shadow: 0 1px 5px #030008;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.wrapper .search-weather i:hover {
+  padding: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper .search-weather i:hover {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+
+.weather-info {
+  height: 0vh;
+  width: 0vh;
+  display: none;
+  background-color: black;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eb8fa9), to(rgba(235, 143, 169, 0)));
+  background: linear-gradient(to bottom, #eb8fa9, rgba(235, 143, 169, 0));
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 60vh;
+  width: 70vh;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  height: 60vh;
+  width: 70vh;
+  display: none;
+  transition: 1s all ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .weather-info {
+    max-width: 45vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.weather-info span {
+  font-size: 18px;
+}
+
+.weather-info p {
+  top: 4px;
+  padding: 1rem;
+  margin: 2px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.weather-info p span {
+  font-size: 20px;
+  text-align: center;
+}
+
+.weather-info p img {
+  padding: 2px;
+  bottom: -10px;
+}
+
+#temp {
+  font-family: Damion, cursive;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: overline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  color: black;
+  text-shadow: black 2px 2px 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  #temp {
+    font-size: 24px;
+    margin-right: 100px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

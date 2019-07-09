@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/index.css">
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <h2 id="header">Weather swings the mood !</h2>
+        <div class="search-weather"> <input id="location-search" type="search" placeholder=" Enter location eg:  Iceland, Kathmandu  , China"> <i id="getweather" class="fa fa-search"></i> </div>
+        <div class="weather-info" id="weatherinfo">
+            <p> <img src="" id="weatherlogo" alt="weatherlogo"></p>
+            <span>Location : </span>
+            <p id="location"> </p>
+
+            <span>Weather Description :</span>
+            <p id="weatherdes"> </p>
+            <span>Today's Weather :</span>
+            <p id="weather"> </p>
+
+            <p id="temp"> </p>
+            <p></p>
+        </div>
+    </div>
+
+    <script src="./js/weather.js"></script>
+</body>
+
+</html>
